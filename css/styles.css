@@ -50,6 +50,7 @@ button {
   justify-content: flex-start;
   margin-right: 76px;
   display: inline-block;
+  padding: 17px 0;
 }
 .studio-logo {
   color: #2e2f42;
@@ -141,6 +142,10 @@ button {
   padding: 0;
   fill: #2f2f37;
   line-height: 0;
+}
+
+.menu-open-btn-icon {
+  fill: #2f2f37;
 }
 .page-header-container {
   display: flex;
