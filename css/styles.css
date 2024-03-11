@@ -156,5 +156,12 @@ button {
 @media screen and (min-width: 768px) {
   .menu {
     display: flex;
+    gap: 40px;
+  }
+  .address-email-phone {
+    display: block;
+  }
+  .menu-open-btn {
+    display: none;
   }
 }
