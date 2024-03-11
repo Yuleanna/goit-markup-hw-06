@@ -129,6 +129,39 @@ button {
   overflow: hidden;
 }
 
+.nav-buttons {
+  color: #2e2f42;
+  font-weight: 500;
+  text-decoration: none;
+  letter-spacing: 0.02em;
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.nav-buttons-current {
+  position: relative;
+  color: #404bbf;
+}
+.nav-buttons-current::after {
+  content: '';
+  border-radius: 2px;
+  width: 100%;
+  left: 0;
+  bottom: -1px;
+  height: 4px;
+  background-color: #404bbf;
+  position: absolute;
+}
+.nav-buttons:hover,
+.nav-buttons:focus {
+  color: #404bbf;
+}
+
+.nav-address:hover,
+.nav-address:focus {
+  color: #404bbf;
+}
 .menu {
   display: none;
 }
@@ -136,6 +169,23 @@ button {
   display: none;
 }
 
+.address-email-phone {
+  display: flex;
+  gap: 40px;
+}
+
+.nav-address {
+  color: #434455;
+  font-weight: 400;
+  text-decoration: none;
+  font-style: normal;
+  letter-spacing: 0.02em;
+  display: block;
+  gap: 40px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 .menu-open-btn {
   background-color: transparent;
   border: none;
