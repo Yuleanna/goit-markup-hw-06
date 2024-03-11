@@ -165,6 +165,11 @@ button {
 .menu {
   display: none;
 }
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 .nav-email-phone {
   display: none;
 }
@@ -208,7 +213,7 @@ button {
     display: flex;
     gap: 40px;
   }
-  .address-email-phone {
+  .nav-email-phone {
     display: block;
   }
   .menu-open-btn {
