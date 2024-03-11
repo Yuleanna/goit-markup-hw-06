@@ -139,8 +139,8 @@ button {
 .menu-open-btn {
   background-color: transparent;
   border: none;
+  cursor: pointer;
   padding: 0;
-  fill: #2f2f37;
   line-height: 0;
 }
 
@@ -151,4 +151,10 @@ button {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .menu {
+    display: flex;
+  }
 }
