@@ -954,19 +954,24 @@ button {
   flex-direction: column;
   top: 50%;
   left: 50%;
-  width: 408px;
-  min-height: 584px;
+  width: 288px;
+  min-height: 623px;
   transform: translate(-50%, -50%);
   padding-top: 72px;
   padding-right: 24px;
   padding-left: 24px;
   padding-bottom: 24px;
-  min-height: 584px;
   background-color: #fcfcfc;
   border-radius: 4px;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12),
     0 2px 1px 0 rgba(0, 0, 0, 0.2);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 768px) {
+  .modal {
+    width: 408px;
+    min-height: 584px;
+  }
 }
 .modal-close-btn-icon {
   width: 8px;
@@ -1017,11 +1022,13 @@ button {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
+  width: 264px;
   margin-bottom: 16px;
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
 }
+
 .review-form-input {
   width: 100%;
   height: 40px;
@@ -1173,30 +1180,39 @@ button {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #fff;
+  text-align: center;
   margin-bottom: 16px;
   font-weight: 500;
 }
-
+@media screen and (min-width: 768px) {
+  .footer-subscribe-text {
+    text-align: left;
+  }
+}
 .footer-subscribe-btn {
   display: flex;
+  margin-left: 77px;
+  margin-right: 77px;
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
+  background-color: #4d5ae5;
+
   letter-spacing: 0.04em;
   text-align: center;
-  justify-content: center;
-  align-items: center;
-  font-weight: 500;
   color: #fff;
-  background-color: #4d5ae5;
   border-radius: 4px;
   padding: 8px 24px;
   height: 40px;
   border: none;
   max-width: 165px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-}
-@media screen and (min-width: 1158px) {
-  .footer-subscribe-btn {
+
+  @media screen and (min-width: 1158px) {
+    .footer-subscribe-btn {
+      justify-content: center;
+      align-items: center;
+    }
   }
 }
 
@@ -1241,6 +1257,10 @@ button {
 @media screen and (min-width: 768px) {
   .footer-form {
     flex-direction: row;
+  }
+}
+@media screen and (min-width: 1158px) {
+  .footer-form {
   }
 }
 .footer-form-wrapper-label {
