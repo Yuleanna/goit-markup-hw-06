@@ -60,7 +60,7 @@
       </div>
     </header>
     <main>
-      <!-- <section class="title-section">
+      <section class="title-section">
         <div class="container">
           <h1 class="main-title">Effective Solutions for Your Business</h1>
 
@@ -68,7 +68,7 @@
             Order Service
           </button>
         </div>
-      </section> -->
+      </section>
       <!-- <section class="section">
         <div class="container">
           <h2 class="visually-hidden">Our benefits</h2>
@@ -126,13 +126,17 @@
           </ul>
         </div>
       </section> -->
-      <!-- <section class="team-cards-section">
+      <section class="team-cards-section">
         <div class="container">
           <h2 class="team-title">Our Team</h2>
 
           <ul class="container-team-cards">
             <li class="team-cards">
               <img
+                srcset="
+                  ./images/productdesigner.jpg 1x,
+                  ./images/teammember1@2x.jpg  2x
+                "
                 src="./images/productdesigner.jpg"
                 alt="prodact-designer"
                 width="264"
@@ -175,6 +179,10 @@
             </li>
             <li class="team-cards">
               <img
+                srcset="
+                  ./images/fronteddeveloper.jpg 1x,
+                  ./images/teammember2@2x.jpg   2x
+                "
                 src="./images/fronteddeveloper.jpg"
                 alt="fronted-dev"
                 width="264"
@@ -217,6 +225,10 @@
             </li>
             <li class="team-cards">
               <img
+                srcset="
+                  ./images/marketing.jpg      1x,
+                  ./images/teammember3@2x.jpg 2x
+                "
                 src="./images/marketing.jpg"
                 alt="marketologist"
                 width="264"
@@ -259,6 +271,10 @@
             </li>
             <li class="team-cards">
               <img
+                srcset="
+                  ./images/uidesigner.jpg     1x,
+                  ./images/teammember4@2x.jpg 2x
+                "
                 src="./images/uidesigner.jpg"
                 alt="designer"
                 width="264"
@@ -301,19 +317,40 @@
             </li>
           </ul>
         </div>
-      </section> -->
-      <!-- <section class="section-portfolio">
+      </section>
+      <section class="section-portfolio">
         <div class="container">
           <h2 class="portfolio-title">Our Portfolio</h2>
           <ul class="our-portfolio">
             <li class="portfolio">
               <div class="overlay-cont">
-                <img
-                  src="./images/bankapp.jpg"
-                  alt="banking-app"
-                  width="360"
-                  height="300"
-                />
+                <picture>
+                  <source
+                    media="(min-width:1158px)"
+                    srcset="
+                      ./images/portfolio/desktop/imgbanking-desktop@1x.jpg 1x,
+                      ./images/portfolio/desktop/imgbanking-desktop@2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(min-width:768px)"
+                    srcset="
+                      ./images/portfolio/tablet/imgbanking-tablet@1x.jpg 1x,
+                      ./images/portfolio/tablet/imgbanking-tablet@2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(min-width:320px)"
+                    srcset="
+                      ./images/portfolio/mobile/imgbaking-mob@1x.jpg 1x,
+                      ./images/portfolio/mobile/imgbaking-mob@2x.jpg 2x
+                    "
+                  />
+                  <img
+                    src="./images/portfolio/mobile/imgbaking-mob@1x.jpg"
+                    alt="banking-app"
+                  />
+                </picture>
                 <p class="overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -422,9 +459,9 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
     </main>
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="container">
         <div class="footer-logo-container">
           <a href="./index.html" class="footer-logo"
@@ -489,7 +526,7 @@
           </form>
         </div>
       </div>
-    </footer> -->
+    </footer>
     <!-- <div class="backdrop is-open">
       <div class="modal">
         <button class="modal-close-btn" type="button">
@@ -597,47 +634,61 @@
         </form>
       </div>
     </div> -->
-    <div class="mobile-menu is-open">
+    <div class="mobile-menu">
       <div class="container mobile-menu-container">
         <button type="button" class="mobile-menu-close-btn">
           <svg class="mobile-menu-close-icon" width="8" height="8">
             <use href="./images/icons.svg#icon-close-normal"></use>
           </svg>
         </button>
-        <ul class="mobile-nav-menu">
-          <li><a href="">Studio</a></li>
-          <li><a href=""></a>Portfolio</li>
-          <li><a href=""></a>Contacts</li>
-        </ul>
-        <ul>
-          <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-          <li><a href="tel:+110001111111">+11 (000) 111-11-11</a></li>
-        </ul>
-        <ul>
+        <nav class="mobile-nav">
+          <ul class="mobile-nav-menu">
+            <li>
+              <a class="mobile-menu-link current-color" href="">Studio</a>
+            </li>
+            <li><a class="mobile-menu-link" href="">Portfolio</a></li>
+            <li><a class="mobile-menu-link" href="">Contacts</a></li>
+          </ul>
+        </nav>
+        <ul class="mobile-address-menu">
           <li>
-            <a href="#">
-              <svg width="24" height="24">
+            <a
+              class="mobile-address-link current-color"
+              href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li>
+            <a class="mobile-address-link" href="tel:+110001111111"
+              >+11 (000) 111-11-11</a
+            >
+          </li>
+        </ul>
+        <ul class="mobile-icon-list">
+          <li class="mobile-icon-item">
+            <a class="mobile-icon-link" href="#">
+              <svg class="mobile-icon-svg" width="24" height="24">
                 <use href="./images/icons.svg#icon-instagram-2"></use>
               </svg>
             </a>
           </li>
-          <li>
-            <a href="#">
-              <svg width="24" height="24">
+          <li class="mobile-icon-item">
+            <a class="mobile-icon-link" href="#">
+              <svg class="mobile-icon-svg" width="24" height="24">
                 <use href="./images/icons.svg#icon-twitter-1"></use>
               </svg>
             </a>
           </li>
-          <li>
-            <a href="#">
-              <svg width="24" height="24">
+          <li class="mobile-icon-item">
+            <a class="mobile-icon-link" href="#">
+              <svg class="mobile-icon-svg" width="24" height="24">
                 <use href="./images/icons.svg#icon-facebook-1"></use>
               </svg>
             </a>
           </li>
-          <li>
-            <a href="#">
-              <svg width="24" height="24">
+          <li class="mobile-icon-item">
+            <a class="mobile-icon-link" href="#">
+              <svg class="mobile-icon-svg" width="24" height="24">
                 <use href="./images/icons.svg#icon-linkedin-1"></use>
               </svg>
             </a>
