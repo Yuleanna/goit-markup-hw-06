@@ -436,11 +436,18 @@ button {
 }
 
 .benefit-text {
-  color: #434455;
+  font-weight: 500;
   font-size: 16px;
-  letter-spacing: 0.02em;
   line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
   text-align: left;
+}
+
+@media screen and (min-width: 1158px) {
+  .benefit-text {
+    font-weight: 400;
+  }
 }
 .button-order-service {
   font-family: 'Roboto', sans-serif;
@@ -586,6 +593,21 @@ button {
   text-transform: capitalize;
   text-align: center;
   color: #2e2f42;
+  margin-bottom: 8px;
+}
+
+@media screen and (min-width: 768px) {
+  .benefit-title {
+    text-align: left;
+  }
+}
+@media screen and (min-width: 1158px) {
+  .benefit-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    text-align: left;
+  }
 }
 
 .benefits-list {
@@ -597,9 +619,16 @@ button {
 }
 @media screen and (min-width: 768px) {
   .benefits-list {
+    width: 736px;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+  }
+}
+@media screen and (min-width: 1158px) {
+  .benefits-list {
+    width: 1128px;
+    gap: 24px;
   }
 }
 .benefits-list-item {
