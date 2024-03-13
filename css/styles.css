@@ -1176,6 +1176,7 @@ button {
   margin-bottom: 16px;
   font-weight: 500;
 }
+
 .footer-subscribe-btn {
   display: flex;
   font-size: 16px;
@@ -1194,6 +1195,11 @@ button {
   max-width: 165px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 }
+@media screen and (min-width: 1158px) {
+  .footer-subscribe-btn {
+  }
+}
+
 .footer-send-icon {
   fill: #fff;
   margin-left: 16px;
