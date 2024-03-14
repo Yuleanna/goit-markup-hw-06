@@ -815,6 +815,7 @@ button {
 .social-list-link:focus {
   background-color: #404bbf;
 }
+
 .footer-social-title {
   text-align: center;
   font-family: 'Roboto', sans-serif;
@@ -867,6 +868,7 @@ button {
   .footer .container {
     gap: 0;
     width: 1158px;
+    flex-wrap: nowrap;
   }
 }
 .social-link-footer {
@@ -1022,7 +1024,7 @@ button {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-  width: 264px;
+
   margin-bottom: 16px;
   letter-spacing: 0.02em;
   text-align: center;
@@ -1153,7 +1155,7 @@ button {
 .review-form-submit-button {
   border-radius: 4px;
   padding: 16px 32px;
-  max-width: 169px;
+  width: 169px;
   height: 56px;
   display: block;
   border: none;
@@ -1191,8 +1193,8 @@ button {
 }
 .footer-subscribe-btn {
   display: flex;
-  margin-left: 77px;
-  margin-right: 77px;
+
+  margin: auto;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
